@@ -38,7 +38,7 @@ module.exports = function (grunt) {
 				src: this.data.replace,
 				overwrite: true,
 				replacements: [{
-					from: new RegExp(from),
+					from: new RegExp(from, 'g'),
 					to: replacementWithoutExtension + "-" + hash + replacementExtension
 				}]
 			});
