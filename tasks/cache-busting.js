@@ -20,7 +20,7 @@ module.exports = function (grunt) {
 				src: this.data.replace,
 				overwrite: true,
 				replacements: [{
-					from: new RegExp(this.data.replacement + "(\\?v=)?([a-z0-9]+)*"),
+					from: new RegExp(this.data.replacement + "(\\?v=)?([a-z0-9]+)*", 'g'),
 					to: this.data.replacement + "?v=" + hash
 				}]
 			});
@@ -38,7 +38,7 @@ module.exports = function (grunt) {
 				src: this.data.replace,
 				overwrite: true,
 				replacements: [{
-					from: from + '/g',
+					from: new RegExp(from, 'g'),
 					to: replacementWithoutExtension + "-" + hash + replacementExtension
 				}]
 			});
