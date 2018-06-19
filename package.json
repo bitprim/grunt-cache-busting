@@ -1,11 +1,11 @@
 {
-	"name": "grunt-cache-busting",
+	"name": "bitprim-grunt-cache-busting",
 	"description": "Simplistic cache busting",
-	"version": "0.0.11",
-	"author": "Paul Tondeur <paul@paultondeur.nl>",
+	"version": "0.9.0",
+	"author": "Darío Eduardo Ramos <dario@bitprim.org>",
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/PaulTondeur/grunt-cache-busting.git"
+		"url": "git://github.com/bitprim/grunt-cache-busting.git"
 	},
 	"engines": {
 		"node": ">= 0.8.0"
